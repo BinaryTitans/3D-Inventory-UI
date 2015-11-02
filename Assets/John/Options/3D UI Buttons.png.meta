@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 96471f3ca3aa0dc4d8f6f202755b543e
+timeCreated: 1446429127
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Start
+    21300002: Options
+    21300004: Quit
+    21300006: Start_Pressed
+    21300008: Options_Pressed
+    21300010: Quit_Pressed
+    21300012: Slider_Background
+    21300014: Slider_Bar
+    21300016: Toggle_Off
+    21300018: Toggle_On
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Start
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1741
+        width: 652
+        height: 265
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Options
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1741
+        width: 652
+        height: 265
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Quit
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 1741
+        width: 652
+        height: 265
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Start_Pressed
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1441
+        width: 594
+        height: 207
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Options_Pressed
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1441
+        width: 594
+        height: 207
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Quit_Pressed
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1441
+        width: 594
+        height: 207
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_Background
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1217
+        width: 1257
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Slider_Bar
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 1159
+        width: 116
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Toggle_Off
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 987
+        width: 384
+        height: 147
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Toggle_On
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 987
+        width: 384
+        height: 147
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

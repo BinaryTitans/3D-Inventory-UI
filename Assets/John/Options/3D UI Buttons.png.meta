@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 96471f3ca3aa0dc4d8f6f202755b543e
-timeCreated: 1446429127
+timeCreated: 1446467519
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -14,6 +14,8 @@ TextureImporter:
     21300014: Slider_Bar
     21300016: Toggle_Off
     21300018: Toggle_On
+    21300020: Back
+    21300022: Back_Pressed
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -78,7 +80,7 @@ TextureImporter:
         width: 652
         height: 265
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Quit
       rect:
@@ -88,13 +90,13 @@ TextureImporter:
         width: 652
         height: 265
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Start_Pressed
       rect:
         serializedVersion: 2
-        x: 63
-        y: 1441
+        x: 65
+        y: 1443
         width: 594
         height: 207
       alignment: 0
@@ -118,7 +120,7 @@ TextureImporter:
         width: 594
         height: 207
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Slider_Background
       rect:
@@ -128,7 +130,7 @@ TextureImporter:
         width: 1257
         height: 75
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Slider_Bar
       rect:
@@ -138,17 +140,17 @@ TextureImporter:
         width: 116
         height: 190
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Toggle_Off
       rect:
         serializedVersion: 2
-        x: 102
+        x: 105
         y: 987
         width: 384
         height: 147
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Toggle_On
       rect:
@@ -157,6 +159,26 @@ TextureImporter:
         y: 987
         width: 384
         height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Back
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 763
+        width: 652
+        height: 265
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Back_Pressed
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 463
+        width: 594
+        height: 207
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -9,36 +9,77 @@ public class OptionsController : MonoBehaviour {
 
     /* Sound Effects */
     public Text soundEffectsText;
-    public Slider soundEffectsSlider;
 
-    /* Test Toggle */
-    public Button testToggleButton;
+    /* Toggle Music */
+    public Button toggleMusicButton;
+    bool musicEnabled = true;
+
+    /* Sprites */
     public Sprite toggleOn;
     public Sprite toggleOff;
-    [HideInInspector] public bool testToggleBool = true;
+
+    /* Save */
+    float savedMasterVolume;
+    int savedMusicToggle;
+
+    void Start()
+    {
+        /* Load Master Volume */
+        savedMasterVolume = PlayerPrefs.GetFloat("Master Volume");
+        masterVolumeSlider.value = savedMasterVolume;
+
+        /* Load Music Enabled */
+        savedMusicToggle = PlayerPrefs.GetInt("Music Toggle");
+        if (savedMusicToggle == 1)
+        {
+            musicEnabled = true;
+            toggleMusicButton.GetComponent<Image>().overrideSprite = toggleOn;
+        } else if (savedMusicToggle == 0)
+        {
+            musicEnabled = false;
+            toggleMusicButton.GetComponent<Image>().overrideSprite = toggleOff;
+        }
+    }
 
     void Update()
     {
         /* Master Volume */
         masterVolumeText.text = "" + Mathf.Round(masterVolumeSlider.value * 100);
 
-        /* Sound Effects */
-        soundEffectsText.text = "" + Mathf.Round(soundEffectsSlider.value * 100);
+        /* Save */
+        //Master Volume
+        if (masterVolumeSlider.value != savedMasterVolume)
+        {
+            PlayerPrefs.SetFloat("Master Volume", masterVolumeSlider.value);
+            savedMasterVolume = masterVolumeSlider.value;
+        }
+        
+        //Music
+        if (musicEnabled == true && savedMusicToggle == 0)
+        {
+            PlayerPrefs.SetInt("Music Toggle", 1);
+            savedMusicToggle = 1;
+        }
+        if (musicEnabled == false && savedMusicToggle == 1)
+        {
+            PlayerPrefs.SetInt("Music Toggle", 0);
+            savedMusicToggle = 0;
+        }
     }
 
-    /* Test Toggle Image */
-    public void testToggleImage()
+    /* Toggle Music Image */
+    public void toggleMusicImage()
     {
-        if (testToggleButton.GetComponent<Image>().overrideSprite == toggleOn)
+        if (toggleMusicButton.GetComponent<Image>().overrideSprite == toggleOn)
         {
-            testToggleButton.GetComponent<Image>().overrideSprite = toggleOff;
-            testToggleBool = false;
+            toggleMusicButton.GetComponent<Image>().overrideSprite = toggleOff;
+            musicEnabled = false;
         }
 
-        else if (testToggleButton.GetComponent<Image>().overrideSprite == toggleOff)
+        else if (toggleMusicButton.GetComponent<Image>().overrideSprite == toggleOff)
         {
-            testToggleButton.GetComponent<Image>().overrideSprite = toggleOn;
-            testToggleBool = true;
+            toggleMusicButton.GetComponent<Image>().overrideSprite = toggleOn;
+            musicEnabled = true;
         }
     }
 }
